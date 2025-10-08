@@ -1,0 +1,9 @@
+[[redirects]]
+  from = "/"
+  to = "/negotiator"
+  status = 302 # This is a temporary redirect
+
+[[redirects]]
+  from = "/negotiator/*"
+  to = "/index.html" # All paths go to your single-page app
+  status = 200 # This makes it a "rewrite", keeping the URL the same
