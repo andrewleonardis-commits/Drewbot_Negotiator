@@ -1,14 +1,6 @@
-# This rule sends anyone who visits your root domain (thedope.life)
-# straight to the /negotiator path where your app lives.
-[[redirects]]
-  from = "/"
-  to = "/negotiator"
-  status = 301 # Use 301 for a permanent redirect
-
-# This is the standard "Single-Page App" (SPA) rule. It ensures that
-# any direct visit to a path like /negotiator (or a future client-side
-# route like /negotiator/history) serves your app's main HTML file,
-# allowing React to take over.
+# This rule is for any direct visit to a path like /negotiator.
+# It serves your app's main HTML file, allowing React to take over.
+# This is the standard rule for all modern single-page apps.
 [[redirects]]
   from = "/*"
   to = "/index.html"
