@@ -1,0 +1,5 @@
+{
+  "name": "DrewBot Negotiation Domination Machine",
+  "description": "A powerful calculator to determine the midpoint in debt negotiations. It tracks multiple rounds, visualizes negotiation progress, and helps determine a fair offer range, showing who 'won' each round based on offer proximity.",
+  "requestFramePermissions": []
+}
