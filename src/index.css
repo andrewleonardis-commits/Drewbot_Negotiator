@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You can add custom base styles here */
+/* src/index.css */
+
+body {
+  /* Set the background color for the entire page */
+  background-color: #0d0d1a; /* A very dark, techy blue/purple */
+
+  /* Set the default font family for the entire page */
+  /* 'Share Tech Mono' is what you imported from Google Fonts. */
+  /* 'monospace' is a fallback in case the Google Font doesn't load. */
+  font-family: 'Share Tech Mono', monospace;
+
+  /* Set a default text color that is readable on the dark background */
+  color: #00ff41; /* A classic green terminal color */
+
+  /* Optional: Add some other base styles for a cleaner look */
+  margin: 0;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* You can also style your inputs globally to match the theme */
+input, textarea, button {
+  font-family: 'Share Tech Mono', monospace;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid #00ff41;
+  padding: 10px;
+  margin-bottom: 10px; /* Add some spacing */
+}
+
+input::placeholder, textarea::placeholder {
+  color: #bbbbbb;
+  opacity: 0.7;
+}

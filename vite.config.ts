@@ -5,8 +5,14 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      // Add the 'base' property here
       base: '/negotiator/',
+
+      // ADD THIS ENTIRE 'build' SECTION
+      build: {
+        // This tells Vite to output the build to a folder named 'negotiator'
+        // at the project's root level (one level UP from this config file).
+        outDir: '../negotiator'
+      },
 
       server: {
         port: 3000,
